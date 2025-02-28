@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "784119674596",
+    "project_id": "app-banhang-cfd87",
+    "storage_bucket": "app-banhang-cfd87.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784119674596:android:178c635006dc4a81995ef1",
+        "android_client_info": {
+          "package_name": "com.example.app_banhang"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH5K9tsNSscVI7l21Q9mRsi-kFx05Y85s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,43 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "com.google.gms.google-services" // Plugin Google Services
+    id "dev.flutter.flutter-gradle-plugin" // Plugin Flutter Gradle
+}
+
+android {
+    namespace = "com.example.app_banhang"
+    compileSdk = 34 // Sử dụng phiên bản compileSdk mới nhất
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    defaultConfig {
+        applicationId "com.example.app_banhang"
+        minSdkVersion 23 // Đặt minSdkVersion ít nhất là 23
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    // Thêm các phụ thuộc Firebase khác nếu cần
+}
+
+apply plugin: 'com.google.gms.google-services' // Đảm bảo dòng này ở cuối tệp

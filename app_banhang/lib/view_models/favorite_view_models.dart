@@ -6,7 +6,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class FavoriteViewModels extends ChangeNotifier {
-  final String _baseUrl = 'http://192.168.0.101:3000/favorite';
+  final String _baseUrl = 'http://192.168.0.102:3000/favorite';
   FavoriteModel? _favorite;
   FavoriteModel? get favorite => _favorite;
   List<FavoriteModel> _listFavorite = [];

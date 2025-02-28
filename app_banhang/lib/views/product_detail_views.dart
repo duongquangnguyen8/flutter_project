@@ -221,7 +221,8 @@ class _ProductDetailState extends State<_ProductDetail> {
                       alignment: Alignment.topLeft,
                       child: Text(
                         widget.product.productName,
-                        style: const TextStyle(fontSize: 20),
+                        style: const TextStyle(
+                            fontSize: 25, fontWeight: FontWeight.bold),
                       ),
                     ),
                     const SizedBox(

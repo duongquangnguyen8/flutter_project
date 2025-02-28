@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthViewModels extends ChangeNotifier {
-  final String baseUrl = 'http://192.168.0.101:3000/user';
+  final String baseUrl = 'http://192.168.0.102:3000/user';
   UserModel? _user;
   UserModel? get user => _user;
   Future<void> register(UserModel newUser) async {

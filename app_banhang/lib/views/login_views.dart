@@ -58,7 +58,6 @@ class LoginState extends State<LoginViews> {
       try {
         await Provider.of<AuthViewModels>(context, listen: false)
             .login(email, pass);
-
         Navigator.of(context)
             .push(MaterialPageRoute(builder: (context) => NavBarViews()));
       } catch (error) {
@@ -84,22 +83,13 @@ class LoginState extends State<LoginViews> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                const Text(
-                  'Hello!',
-                  style: TextStyle(
-                      fontSize: 30, color: Color.fromARGB(255, 211, 209, 209)),
+                Container(
+                  alignment: Alignment.center,
+                  child: Image.asset('images/img_logo.png'),
                 ),
-                const Text(
-                  'Xin chào ',
-                  style: TextStyle(
-                      fontSize: 30,
-                      fontStyle: FontStyle.normal,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black),
-                ),
-                const SizedBox(
-                  height: 16,
-                ),
+                // const SizedBox(
+                //   height: 10,
+                // ),
                 TextField(
                   controller: _emailController,
                   decoration: InputDecoration(

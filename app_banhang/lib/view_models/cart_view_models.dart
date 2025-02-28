@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class CartViewModels extends ChangeNotifier {
-  final String _baseUrl = 'http://192.168.0.101:3000/cart';
+  final String _baseUrl = 'http://192.168.0.102:3000/cart';
   List<dynamic> _listProduct = [];
   List<dynamic> get listProduct => _listProduct;
   List<dynamic> _listQuantities = [];

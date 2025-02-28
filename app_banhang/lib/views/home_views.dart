@@ -26,6 +26,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  Category all =
+      Category('Tất cả', Image.asset('images/img_life_category.png'));
   Category category_life =
       Category('Sách đời sống', Image.asset('images/img_life_category.png'));
   Category category_history =
@@ -39,6 +41,7 @@ class _HomeState extends State<Home> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    listCategory.add(all);
     listCategory.add(category_life);
     listCategory.add(category_history);
     listCategory.add(category_academy);

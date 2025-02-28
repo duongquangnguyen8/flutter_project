@@ -1,5 +1,6 @@
 import 'package:app_banhang/views/favorite_views.dart';
 import 'package:app_banhang/views/home_views.dart';
+import 'package:app_banhang/views/profile_views.dart';
 import 'package:app_banhang/widget/custom_appbar.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class _NavBarViewsState extends State<NavBarViews> {
     HomeViews(),
     FavoriteViews(),
     Scaffold(),
-    HomeViews(),
+    ProfileViews(),
   ];
   @override
   Widget build(BuildContext context) {

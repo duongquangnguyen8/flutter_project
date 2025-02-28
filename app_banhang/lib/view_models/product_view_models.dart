@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ProductViewModels extends ChangeNotifier {
-  final String url_product = 'http://192.168.0.101:3000/product';
+  final String url_product = 'http://192.168.0.102:3000/product';
   List<Product> _productList = [];
   Product? _product;
   Product? get product => _product;

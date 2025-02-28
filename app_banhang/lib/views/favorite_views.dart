@@ -98,10 +98,21 @@ class _FavoriteState extends State<_Favorite> {
                 child: Container(
                   margin: const EdgeInsets.fromLTRB(0, 10, 0, 0),
                   decoration: BoxDecoration(
-                    border: Border.all(
-                        color: Colors.grey, width: 1), // Tạo viền cho Container
-                    borderRadius: BorderRadius.circular(8), // Bo góc viền
-                  ),
+                      border: Border.all(
+                          color: Colors.grey,
+                          width: 1), // Tạo viền cho Container
+                      borderRadius: BorderRadius.circular(8),
+                      boxShadow: [
+                        BoxShadow(
+                          color: const Color.fromARGB(255, 255, 255, 255)
+                              .withOpacity(0.1),
+                          blurRadius: 8,
+                          spreadRadius: 2,
+                          offset: Offset(0, 4),
+                        )
+                      ]
+                      // Bo góc viền
+                      ),
                   padding: const EdgeInsets.all(5),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -141,8 +152,8 @@ class _FavoriteState extends State<_Favorite> {
                                 showDialog(
                                     context: context,
                                     builder: (context) => AlertDialog(
-                                          title: Text('Thông báo'),
-                                          content: Text(
+                                          title: const Text('Thông báo'),
+                                          content: const Text(
                                             'Bạn có chắc chắn muốn xoá khởi danh sách yêu thích?',
                                             style: TextStyle(fontSize: 20),
                                           ),
@@ -174,7 +185,7 @@ class _FavoriteState extends State<_Favorite> {
 
                                                 _getFavorite();
                                               },
-                                              child: Text(
+                                              child: const Text(
                                                 'Đồng ý',
                                                 style: TextStyle(fontSize: 20),
                                               ),
